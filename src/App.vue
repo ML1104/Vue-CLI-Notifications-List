@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Notifications List"/>
+    <Notifications/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Notifications from './components/Notifications.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    Notifications
+  },
 }
 </script>
 
@@ -24,5 +26,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  border: 1px solid black;
 }
 </style>
